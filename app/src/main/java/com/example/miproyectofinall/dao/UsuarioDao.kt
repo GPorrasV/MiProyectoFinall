@@ -10,10 +10,10 @@ interface UsuarioDao {
     fun insert(usuario: Usuario)
 
     @Update()
-    fun update(Usuario:Usuario)
+    fun update(usuario:Usuario)
 
     @Delete()
-    fun delete(Usuario: Usuario)
+    fun delete(usuario: Usuario)
 
     @Query("SELECT * FROM tbl_usuario")
     fun select(usuario:Usuario)
