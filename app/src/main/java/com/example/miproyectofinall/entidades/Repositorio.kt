@@ -8,6 +8,8 @@ import androidx.room.PrimaryKey
 data class Repositorio (
     @PrimaryKey(autoGenerate = true)
     val id:Int,
+    @ColumnInfo(name = "idRepoLocal")
+    val idRepoLocal: Int,
     @ColumnInfo(name = "nombre")
     val nombre:String,
     @ColumnInfo(name = "descripcion")
@@ -20,5 +22,4 @@ data class Repositorio (
     val url:String,
     @ColumnInfo(name="fechaCreacion")
     val fechaCreacion: String
-
 )

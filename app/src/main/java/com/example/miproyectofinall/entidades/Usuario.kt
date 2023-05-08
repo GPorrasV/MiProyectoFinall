@@ -10,13 +10,15 @@ data class Usuario(
     val id : Int,
     @ColumnInfo(name = "nombreCompleto")
     val nombreCompleto: String,
+    @ColumnInfo(name="userToken")
+    val userToken: String,
     @ColumnInfo(name = "nombreUsuario")
     val nombreUsuario: String,
     @ColumnInfo(name="email")
     val email:String,
     @ColumnInfo(name = "urlPerfil")
     val urlPerfil:String,
-    @ColumnInfo(name="num_repositorios")
-    val repositorios: String
+    @ColumnInfo(name="numRepositorios")
+    val numRepositorios: Int
 
 )
